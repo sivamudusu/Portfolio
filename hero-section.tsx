@@ -1,0 +1,115 @@
+"use client"
+
+import { useState, useEffect } from "react"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Github, Linkedin, Mail } from "lucide-react"
+import Link from "next/link"
+import { motion } from "framer-motion"
+
+export default function HeroSection() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
+  return (
+    <section className="relative overflow-hidden bg-background py-20 md:py-32">
+      {/* Background gradient */}
+      <div className="absolute inset-0 -z-10 h-full w-full bg-background">
+        <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-y-[30%] translate-x-[20%] rounded-full bg-primary/20 opacity-50 blur-[80px]" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] translate-y-[30%] -translate-x-[20%] rounded-full bg-primary/30 opacity-50 blur-[90px]" />
+      </div>
+
+      <div className="container px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-10 text-center">
+          <div className="space-y-6">
+            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
+                <span className="block">Hi, I'm </span>
+                <span className="block mt-2 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                  Shiva
+                </span>
+              </h1>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            >
+              <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
+                I'm a <span className="font-medium text-primary">full-stack developer</span> passionate about building
+                beautiful, functional, and user-centered digital experiences.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex flex-wrap items-center justify-center gap-4"
+            >
+              <Button asChild size="lg" className="rounded-full">
+                <Link href="#projects">
+                  View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="rounded-full">
+                <Link href="#contact">Contact Me</Link>
+              </Button>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex items-center justify-center space-x-4"
+          >
+            <Link
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-muted p-3 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
+            >
+              <Github className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-muted p-3 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
+            >
+              <Linkedin className="h-5 w-5" />
+              <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="mailto:your.email@example.com"
+              className="rounded-full bg-muted p-3 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
+            >
+              <Mail className="h-5 w-5" />
+              <span className="sr-only">Email</span>
+            </Link>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.8 }}
+            className="absolute bottom-10 left-1/2 hidden -translate-x-1/2 md:block"
+          >
+            <div className="flex flex-col items-center justify-center">
+              <div className="h-12 w-0.5 bg-primary/20 animate-pulse" />
+              <span className="mt-2 text-sm text-muted-foreground">Scroll Down</span>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
+

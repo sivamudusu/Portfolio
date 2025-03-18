@@ -18,40 +18,40 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
+    title: "Touch",
     description:
-      "A full-stack e-commerce platform with real-time inventory management, user authentication, and secure payment processing. Features include dynamic product filtering, real-time cart updates, and an admin dashboard for inventory management.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma", "Stripe"],
-    liveUrl: "https://example.com",
+      "A full-stack social networking platform with automated content moderation and context-based authentication system.",
+    image: "/touch.png",
+    technologies: ["React.js", "JavaScript", "Tailwind CSS", "PostgreSQL", "Redux", "Express.js", "Node.js", "Passport", "Nodemailer"],
+    liveUrl: "",
+    githubUrl: "https://github.com/sivamudusu/touch",
+  },
+  {
+    title: "Book My Show",
+    description:
+      "A backend application built using Spring Boot and PostgreSQL. It handles real-time booking and ticket management for events and movies.",
+    image: "/bookmyshow.png",
+    technologies: ["Spring Boot", "PostgreSQL", "Spring Data JPA", "Spring Security", "Thymeleaf"],
+    liveUrl: "",
+    githubUrl: "https://github.com/sivamudusu/bookMyShow",
+  },
+  {
+    title: "Splitwise",
+    description:
+      "A backend application built using Spring Boot and PostgreSQL. It manages expense splitting and tracking among groups of people.",
+    image: "/split.png",
+    technologies: ["Spring Boot", "PostgreSQL", "Spring Data JPA", "Spring Security", "Thymeleaf"],
+    liveUrl: "",
     githubUrl: "https://github.com",
   },
   {
-    title: "AI Chat Application",
+    title: "Dev talks",
     description:
-      "Real-time chat application powered by AI, featuring message translation and sentiment analysis. Includes features like voice messages, file sharing, and customizable chat interfaces with different AI personalities.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "Node.js", "Socket.io", "OpenAI API", "MongoDB"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Task Management System",
-    description:
-      "Collaborative task management tool with real-time updates, file sharing, and team analytics. Features include customizable workflows, time tracking, and detailed progress reports with beautiful data visualizations.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["Vue.js", "Firebase", "Tailwind CSS", "TypeScript"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Portfolio Generator",
-    description:
-      "An intuitive portfolio generator that helps developers showcase their work. Features include customizable themes, automatic project imports from GitHub, and built-in analytics to track portfolio engagement.",
-    image: "/placeholder.svg?height=600&width=800",
-    technologies: ["React", "GraphQL", "Node.js", "MongoDB", "AWS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+      "A blog application built using 11ty.js. Users can add new blog posts by adding markdown files to the repository, which are then converted to HTML.",
+    image: "/devtalks.png",
+    technologies: ["11ty.js", "Markdown", "HTML", "CSS", "JavaScript"],
+    liveUrl: "https://devtalkss.netlify.app/",
+    githubUrl: "https://github.com/sivamudusu/blog",
   },
 ]
 

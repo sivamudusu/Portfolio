@@ -87,10 +87,10 @@ export function Footer() {
             <ul className="space-y-2 text-muted-foreground">
               <li>
                 <Link href="mailto:your.email@example.com" className="hover:text-primary transition-colors">
-                  your.email@example.com
+                  sivamudusu@gmail.com
                 </Link>
               </li>
-              <li>Location: Your City, Country</li>
+              <li>Location: Hyderabad, India</li>
             </ul>
           </motion.div>
 
@@ -105,7 +105,7 @@ export function Footer() {
             <h4 className="font-semibold">Connect</h4>
             <div className="flex gap-4">
               <Link
-                href="https://github.com"
+                href="https://github.com/sivamudusu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
@@ -114,7 +114,7 @@ export function Footer() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="https://linkedin.com"
+                href="www.linkedin.com/in/shiva-mudusu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
@@ -132,7 +132,7 @@ export function Footer() {
                 <span className="sr-only">Twitter</span>
               </Link>
               <Link
-                href="mailto:your.email@example.com"
+                href="mailto:sivamudusu@gmail.com"
                 className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"
               >
                 <Mail className="w-5 h-5" />

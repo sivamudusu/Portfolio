@@ -30,7 +30,7 @@ const projects: Project[] = [
     title: "Book My Show",
     description:
       "A backend application built using Spring Boot and PostgreSQL. It handles real-time booking and ticket management for events and movies.",
-    image: "/bookmyshow.png",
+    image: "/bookmy.jpg",
     technologies: ["Spring Boot", "PostgreSQL", "Spring Data JPA", "Spring Security", "Thymeleaf"],
     liveUrl: "",
     githubUrl: "https://github.com/sivamudusu/bookMyShow",
@@ -102,7 +102,7 @@ export function ProjectsSection() {
             >
               {/* Project Image */}
               <div className="w-full md:w-1/2">
-                <div className="relative aspect-video overflow-hidden rounded-xl bg-gradient-to-br from-background/80 to-background/30 backdrop-blur-sm border border-white/10">
+                <div className="relative aspect-video overflow-hidden rounded-xl">
                   <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 </div>
               </div>

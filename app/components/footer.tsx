@@ -114,7 +114,7 @@ export function Footer() {
                 <span className="sr-only">GitHub</span>
               </Link>
               <Link
-                href="www.linkedin.com/in/shiva-mudusu"
+                href="https://linkedin.com/in/shiva-mudusu"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-muted p-2 text-muted-foreground transition-colors hover:bg-muted/80 hover:text-primary"

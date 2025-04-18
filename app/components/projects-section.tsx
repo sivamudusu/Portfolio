@@ -31,7 +31,7 @@ const projects: Project[] = [
     description:
       " Inspired by Postman to streamline API testing and request management..",
     image: "/apiclient.png",
-    technologies: ["React.js", "JavaScript", "Tailwind CSS", "PostgreSQL", "Redux", "Express.js", "Node.js", "Passport", "Nodemailer"],
+    technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
     liveUrl: "https://apiclient.netlify.app/",
     githubUrl: "https://github.com/sivamudusu/API-Client-LLM-Powered-",
   },

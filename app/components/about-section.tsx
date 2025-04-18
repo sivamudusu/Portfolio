@@ -11,14 +11,12 @@ import {
   SiTailwindcss,
   SiPostgresql,
   SiMongodb,
-  SiGraphql,
   SiDocker,
   SiAmazonwebservices,
   SiGit,
   SiFirebase,
-  SiVuedotjs,
-  SiAngular,
   SiFigma,
+  SiSpringboot,
 } from "react-icons/si"
 
 const skills = [
@@ -30,14 +28,12 @@ const skills = [
   { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
   { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
   { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-  { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
   { name: "Docker", icon: SiDocker, color: "#2496ED" },
   { name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },
   { name: "Git", icon: SiGit, color: "#F05032" },
   { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
-  { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
-  { name: "Angular", icon: SiAngular, color: "#DD0031" },
   { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+  { name: "SpringBoot", icon: SiSpringboot, color: "#61DAFB" },
 ]
 
 export function AboutSection() {

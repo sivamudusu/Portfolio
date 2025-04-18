@@ -27,6 +27,15 @@ const projects: Project[] = [
     githubUrl: "https://github.com/sivamudusu/touch",
   },
   {
+    title: "API Client(LLM Powered)",
+    description:
+      " Inspired by Postman to streamline API testing and request management..",
+    image: "/apiclient.png",
+    technologies: ["React.js", "JavaScript", "Tailwind CSS", "PostgreSQL", "Redux", "Express.js", "Node.js", "Passport", "Nodemailer"],
+    liveUrl: "https://apiclient.netlify.app/",
+    githubUrl: "https://github.com/sivamudusu/API-Client-LLM-Powered-",
+  },
+  {
     title: "Book My Show",
     description:
       "A backend application built using Spring Boot and PostgreSQL. It handles real-time booking and ticket management for events and movies.",
@@ -42,8 +51,9 @@ const projects: Project[] = [
     image: "/split.png",
     technologies: ["Spring Boot", "PostgreSQL", "Spring Data JPA", "Spring Security", "Thymeleaf"],
     liveUrl: "",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/sivamudusu/split-wise",
   },
+
   {
     title: "Dev talks",
     description:
